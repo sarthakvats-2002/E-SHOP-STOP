@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="card-styling">
+        <div class="headingSignIn marginTop">Sign Up</div>
+        <div class="d-block marginTop">
+            <span class="headingSignIn w-50">UserName:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop">
+            <span class="headingSignIn w-50">First Name:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop">
+            <span class="headingSignIn w-50">Last Name:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop">
+            <span class="headingSignIn w-50">Phone No:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop">
+            <span class="headingSignIn w-50">Email Id:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop" *ngIf="this.commonService.customerType =='customer'">
+            <span class="headingSignIn w-50">Gender:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop" *ngIf="this.commonService.customerType =='retailer'">
+            <span class="headingSignIn w-50">Organisation Name:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop" *ngIf="this.commonService.customerType =='retailer'">
+            <span class="headingSignIn w-50">Organisation Type:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop" *ngIf="this.commonService.customerType =='sponsor'">
+            <span class="headingSignIn w-50">Company Name:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop" *ngIf="this.commonService.customerType =='sponsor'">
+            <span class="headingSignIn w-50">Field/Sector:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop">
+            <span class="headingSignIn w-50">Address:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop">
+            <span class="headingSignIn w-50">Password:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop marginBottom">
+            <button class="signBtn" (click)="navigateToSignIn()">SignUp</button>
+        </div>
+    </div>
+    </div>

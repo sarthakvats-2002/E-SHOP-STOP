@@ -1,0 +1,45 @@
+.container{
+    min-height: 93vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-image:url(./../../../assets/mobile.jpg);
+}
+.card-styling{
+    text-align: center;
+    width: 40%;
+    margin-top: 80px;
+    padding: 10px 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fa3764;
+    box-shadow: 1px 1px 1px 1px #f7f0f0;
+}
+.w-50{
+    width: 50% !important;
+}
+
+.headingSignIn{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.marginTop{
+    margin-top: 2em;
+}
+
+.marginLeft{
+    margin-left: 2em;
+}
+
+.signBtn{
+    width: 120px;
+    height: 2.2em;
+}
+
+.marginBottom{
+    margin-bottom: 2em;
+}

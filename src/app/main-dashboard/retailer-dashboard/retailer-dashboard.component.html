@@ -1,0 +1,54 @@
+'<div class="d-flex">
+    <div>
+        <div><button class="btn-options" (click)="command('add')">Add A Product</button></div>
+        <div><button class="btn-options" (click)="command('remove')">Remove A Product</button></div>
+        <div><button class="btn-options" (click)="command('view')">View Existing Product</button></div>
+    </div>
+    <div class="card-styling" *ngIf="this.showRemoved == false && this.show == false && this.typeOfCommand != ''">
+        <div class="d-block marginTop" *ngIf="this.typeOfCommand == 'add'">
+            <span class="headingSignIn w-50">Product Type:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop" *ngIf="this.typeOfCommand == 'add'">
+            <span class="headingSignIn w-50">Product Image:</span>
+            <label class="label"></label>
+            <input class="w-50 marginLeft" type="file" name="file[]" id="file" #inputFile>
+        </div>
+        <div class="d-block marginTop" *ngIf="this.typeOfCommand == 'add'">
+            <span class="headingSignIn w-50">Product Price:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop" *ngIf="this.typeOfCommand == 'add'">
+            <span class="headingSignIn">No. of Stocks Available:</span>
+            <input type="text" class="marginLeft">
+        </div>
+        <div class="d-block marginTop" *ngIf="this.typeOfCommand == 'add'">
+            <span class="headingSignIn">Percentage Discount Available:</span>
+            <input type="text" class="marginLeft">
+        </div>
+        <div class="d-block marginTop" *ngIf="this.typeOfCommand == 'add'">
+            <span class="headingSignIn">Voluchers Applicability Status:</span>
+            <input type="text" class="marginLeft">
+        </div>
+        <div class="d-block marginTop" *ngIf="this.typeOfCommand == 'remove'">
+            <span class="headingSignIn w-50">Product ID:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop" *ngIf="this.typeOfCommand == 'remove'">
+            <span class="headingSignIn w-50">Reason:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop marginBottom " *ngIf="this.typeOfCommand == 'add'">
+            <button class="signBtn" (click)="added()">ADD</button>
+        </div>
+        <div class="d-block marginTop marginBottom" *ngIf="this.typeOfCommand == 'remove'">
+            <button class="signBtn" (click)="removed()">Remove</button>
+        </div>
+    </div>
+    <div class="card-styling" *ngIf="this.show">
+        <div class="font20 marginTop">Product Added</div>
+    </div>
+    <div class="card-styling" *ngIf="this.showRemoved">
+        <div class="font20 marginTop">Product Removed</div>
+    </div>
+</div>'

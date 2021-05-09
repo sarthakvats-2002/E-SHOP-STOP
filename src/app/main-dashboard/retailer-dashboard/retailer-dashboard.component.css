@@ -1,0 +1,58 @@
+.btn-options{
+    background-color: #fa3764;
+    color: white;
+    border: none;
+    width: 200px;
+    padding: 13px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.card-styling{
+    margin-top: 20px;
+    text-align: center;
+    width: 40%;
+    padding: 10px 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fa3764;
+    box-shadow: 1px 1px 1px 1px #f7f0f0;
+    cursor: pointer;
+}
+
+.d-flex{
+    display: flex !important;
+}
+
+.headingSignIn{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.marginLeft{
+    margin-left: 2em;
+}
+
+.marginTop{
+    margin-top: 2em;
+}
+
+.w-50{
+    width: 50% !important;
+}
+
+.font20{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #fa3764;
+}
+
+
+.signBtn{
+    width: 33%;
+    color: black;
+    height: 2em;
+    cursor: pointer;
+}

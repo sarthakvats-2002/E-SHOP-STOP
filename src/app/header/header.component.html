@@ -1,0 +1,95 @@
+<div class="header-container">
+    <li class="nav-item dropdown spacing-btn">
+        <span class="nav-link dropdown-toggle dropdown mydropdowncss" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="header-items" href="javascript:void(0)" class="header-option">MENS</a>
+            <div class="dropdown-menu dropdown-primary list">
+                <a href="#" target="_blank" class="dropdown-item styling-option">T-shirt</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Shirts</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">SweatShirt</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Jeans</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Jackets</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Blazers & Coats</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Sweaters</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Formal Shirts</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Casual Trousers</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Formal Trousers</a>
+            </div>
+        </span>
+    </li>
+    <li class="nav-item dropdown spacing-btn">
+        <span class="nav-link dropdown-toggle dropdown mydropdowncss" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="header-items" href="javascript:void(0)" class="header-option">WOMEN</a>
+            <div class="dropdown-menu dropdown-primary list">
+                <a href="#" target="_blank" class="dropdown-item styling-option">Kurtas & Suits</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Shirts</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Tops</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Jeans</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Jackets</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Ethnic Wear</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Sarees</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Formal Shirts</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Shrugs</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Formal Trousers</a>
+            </div>
+        </span>
+    </li>
+    <li class="nav-item dropdown spacing-btn">
+        <span class="nav-link dropdown-toggle dropdown mydropdowncss" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="header-items" href="javascript:void(0)" class="header-option">KIDS</a>
+            <div class="dropdown-menu dropdown-primary list">
+                <a href="#" target="_blank" class="dropdown-item styling-option">Flip flops</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Shirts</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Skirts $ shorts</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Jeans</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Jackets</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">School Shoes</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Sweaters</a>
+            </div>
+        </span>
+    </li>
+    <li class="nav-item dropdown spacing-btn">
+        <span class="nav-link dropdown-toggle dropdown mydropdowncss" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="header-items" href="javascript:void(0)" class="header-option">HOME & LIVING</a>
+            <div class="dropdown-menu dropdown-primary list">
+                <a href="#" target="_blank" class="dropdown-item styling-option">Bedsheets</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Carpets</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Floor Mats</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">
+                    Bath Towel</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Blankets</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Pillows</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Clocks</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Mirror</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Cups & Mugs</a>
+            </div>
+        </span>
+    </li>
+    <li class="nav-item dropdown spacing-btn">
+        <span class="nav-link dropdown-toggle dropdown mydropdowncss" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="header-items" href="javascript:void(0)" class="header-option">ELECTRONICS</a>
+            <div class="dropdown-menu dropdown-primary list">
+                <a href="#" target="_blank" class="dropdown-item styling-option">Electronic Watch</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Electric Cars</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Electric Lamp</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Diffuser</a>
+                <a href="#" target="_blank" class="dropdown-item styling-option">Others</a>
+            </div>
+        </span>
+    </li>
+    <div class="header-option">ABOUT US</div>
+    <div class="header-option">CONTACT</div>
+    <div class="position spacing-btn">
+        <img src="./../../assets/Search icon.svg" class="searchIcon">
+        <input type="text" placeholder="Type to Search" class="form-control">
+    </div>
+    <div class="spacing-btn">
+        <button class="login-btn" (click)="login('SignIn')" *ngIf="!checkSignUp()">SignIn</button>
+        <button class="login-btn" (click)="login('SignUp')" *ngIf="!checkSignUp()">SignUp</button>
+        <button class="login-btn" (click)="login('logout')" *ngIf="checkSignUp()" [ngClass]="{'margin-left': checkSignUp()}">LogOut</button>
+    </div>
+</div>

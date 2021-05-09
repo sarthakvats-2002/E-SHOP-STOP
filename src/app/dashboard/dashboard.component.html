@@ -1,0 +1,9 @@
+<section class="dashboard-container">
+    <div class="title"><span class="heading">E-Shop <span style="color: black;">Stop</span></span>
+        <div class="d-block" *ngIf="this.commonService.signThroughHeader">
+            <div><button class="btn-styling" (click)="navigateTo('customer')">Customer</button></div>
+            <div><button class="btn-styling" (click)="navigateTo('retailer')">Retailer</button></div>
+            <div><button class="btn-styling" (click)="navigateTo('sponsor')">Sponsor</button></div>
+        </div>
+    </div>
+</section>

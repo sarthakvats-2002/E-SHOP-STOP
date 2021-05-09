@@ -1,0 +1,37 @@
+<div class="d-flex">
+    <div>
+        <div><button class="btn-options">Add A Challenge</button></div>
+        <div><button class="btn-options">Raise Funds</button></div>
+        <div><button class="btn-options">Revenue</button></div>
+    </div>
+    <div class="card-styling" *ngIf="!this.show">
+        <div class="d-block marginTop">
+            <span class="headingSignIn w-50">Challenge Template:</span>
+            <label class="label"></label>
+            <input class="w-50 marginLeft" type="file" name="file[]" id="file" #inputFile >
+        </div>
+        <div class="d-block marginTop">
+            <span class="headingSignIn">Deadline for Submission:</span>
+            <input type="text" class="marginLeft">
+        </div>
+        <div class="d-block marginTop">
+            <span class="headingSignIn w-50">Demo Video:</span>
+            <label class="label"></label>
+        <input class="w-50 marginLeft" type="file" name="file[]" id="file" #inputFile >
+        </div>
+        <div class="d-block marginTop">
+            <span class="headingSignIn w-50">Rewards Awarded:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop">
+            <span class="headingSignIn w-50">Limit for Submission:</span>
+            <input type="text" class="w-50 marginLeft">
+        </div>
+        <div class="d-block marginTop marginBottom">
+            <button class="signBtn" (click)="addChallenge()">Add</button>
+        </div>
+    </div>
+    <div class="card-styling" *ngIf="this.show">
+        <div class="font20 marginTop">Challenge Added</div>
+    </div>
+</div>
